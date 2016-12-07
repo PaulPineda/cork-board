@@ -1,0 +1,35 @@
+{
+  "name": "pineda-codes",
+  "version": "1.0.0",
+  "description": "ReactJS portfolio site for pineda.codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --devtool eval --progres"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PaulPineda/pineda.codes.git"
+  },
+  "author": "Paul Pineda <paul@pineda.codes> (http://pineda.codes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulPineda/pineda.codes/issues"
+  },
+  "homepage": "https://github.com/PaulPineda/pineda.codes#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "lodash": "^4.17.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
