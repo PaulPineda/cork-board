@@ -8,8 +8,6 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  /*align-items: flex-start;
-  justify-content: center;*/
 
 }
 .row {
@@ -22,17 +20,14 @@ body {
   height: 25vh;
   max-height: 150px;
 }
-.row-content {
-  height: 50vh;
-}
 .tile {
-  /*background-color: #0D2510;*/
   flex: 1;
   min-width: 150px;
   align-self: stretch;
 }
 .polaroids > div {
   padding-left: 30px;
+  margin: 10px;
   flex: 1;
   min-width: 150px;
 }
@@ -67,8 +62,8 @@ body {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   padding: 5px;
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
   position: relative;
   z-index: 105;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
@@ -104,9 +99,6 @@ body {
   margin: 0;
   line-height: 0.5;
   text-align: center;
-}
-.column {
-  flex-direction: 'column';
 }
 .mobile-row{
   display: none;
