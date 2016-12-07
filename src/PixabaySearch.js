@@ -12,11 +12,13 @@ export default class PixabaySearch extends Component {
   }
   render() {
     return (
-      <input type="text"
-        style={this.props.styles}
-        onChange={this.inputChanged}
-        value={this.state.query.toUpperCase()}
-        placeholder={this.props.placeholder}/>
+      <div className={this.props.class}>
+        <input type="text"
+          style={this.props.styles}
+          onChange={this.inputChanged}
+          value={this.state.query.toUpperCase()}
+          placeholder={this.props.placeholder}/>
+      </div>
     );
   }
 }

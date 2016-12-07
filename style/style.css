@@ -8,43 +8,90 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: flex-start;
+  justify-content: center;*/
+
 }
 .row {
   display: flex;
-  background: #0D2510;
+  flex-wrap: wrap;
+  align-items: stretch;
+  min-height: 150px;
 }
 .row-limits {
   height: 25vh;
-  max-height: 200px;
+  max-height: 150px;
 }
 .row-content {
   height: 50vh;
 }
-.item1 {
-  flex: 1;
+.tile {
   /*background-color: #0D2510;*/
-  min-width: 200px;
+  flex: 1;
+  min-width: 150px;
+  align-self: stretch;
 }
-.item1-column {
-  height: 50%;
-  min-width: 200px;
+.polaroids > div {
+  padding-left: 30px;
+  flex: 1;
+  min-width: 150px;
 }
-.item2 {
-  flex: 2;
-  min-width: 200px;
+.polaroids div {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
 }
-.item4 {
+.polaroids div:nth-child(even) {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+.polaroids div > img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  position: relative;
+  z-index: 105;
+  padding: 5px;
+  background-color: #fff;
+}
+.polaroids div > img {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+/* On hover, darken the shadows a bit */
+.polaroids div > img {
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+.selected > img{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  padding: 5px;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  position: relative;
+  z-index: 105;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+  background-color: #fff;
+}
+.searchbar-container {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+.searchbar {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 4;
-  /*background-color: #0D2510;
-  background-repeat: no-repeat;*/
-  min-width: 400px;
+  min-width: 320px;
 }
-.item4 > input {
+.searchbar > input {
+  pointer-events: all;
   width: 90%;
   border: none;
   background: rgba(100, 255, 100, 0.5);
@@ -72,7 +119,7 @@ body {
   .mobile-hide {
     display: none;
   }
-  .item4 > input {
+  .searchbar > input {
     font-size: 50px;
   }
 }
