@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import axios from 'axios';
 import PixabaySearch from './PixabaySearch';
 import _ from 'lodash';
-import _sc from '../data';
+import * as _sc from '../data';
 
 class Root extends Component {
   constructor(props){
@@ -19,7 +19,7 @@ class Root extends Component {
   }
 
   getImages(query) {
-    var API_KEY = _sc;
+    var API_KEY = _sc.pb;
     var pageParam = (query.length > 4) ? '&page='+Math.ceil(Math.random(50)*10):'';
     var URL = 'https://pixabay.com/api/?key='+API_KEY+'&q='+encodeURIComponent(query)
               +'&orientation=horizontal&image_type=photo'+pageParam;
@@ -70,7 +70,7 @@ class Root extends Component {
         <div className="row row-content">
           <div className="item1 column mobile-hide">
             <div className="item1-column" style={{...images[2]}}></div>
-            <div className="item1-column" style={{...images[3]}}></div>
+            <div className="item1"></div>
           </div>
           <div className="item4" style={images[this.state.contentIndex]}>
               <PixabaySearch
@@ -81,7 +81,7 @@ class Root extends Component {
               />
           </div>
           <div className="item1 column mobile-hide">
-            <div className="item1-column" style={{...images[4]}}></div>
+            <div className="item1-column"></div>
             <div className="item1-column" style={{...images[5]}}></div>
           </div>
         </div>

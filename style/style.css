@@ -71,6 +71,6 @@ body {
     display: none;
   }
   .item4 > input {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
