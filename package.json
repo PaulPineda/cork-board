@@ -1,7 +1,7 @@
 {
-  "name": "pineda-codes",
+  "name": "cork-board",
   "version": "1.0.0",
-  "description": "ReactJS portfolio site for pineda.codes",
+  "description": "Cork board for pinning and images and adding overlayed text",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/PaulPineda/pineda.codes.git"
+    "url": "git+ssh://git@github.com/PaulPineda/cork-board.git"
   },
   "author": "Paul Pineda <paul@pineda.codes> (http://pineda.codes)",
   "license": "MIT",

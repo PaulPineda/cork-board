@@ -1,6 +1,8 @@
 body {
   padding :0;
   margin: 0;
+  background-image: url('../dist/cork.jpg');
+  background-repeat: repeat;
 }
 #spa {
   width: 100vw;
