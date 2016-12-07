@@ -5,19 +5,28 @@ export default class PixabaySearch extends Component {
     super(props);
     this.state = { query: this.props.query };
     this.inputChanged = :: this.inputChanged;
+    this.keyDownHandler = :: this.keyDownHandler;
   }
   inputChanged(e) {
     this.setState({ query: e.target.value });
     this.props.onSearchQueryChanged(e.target.value);
   }
+  keyDownHandler(e){
+    if(e.key === "Enter")this.inputChanged(e);
+  }
   render() {
+    const { classInner, classContainer, styles, placeholder } = this.props;
+
     return (
-      <div className={this.props.class}>
-        <input type="text"
-          style={this.props.styles}
-          onChange={this.inputChanged}
-          value={this.state.query.toUpperCase()}
-          placeholder={this.props.placeholder}/>
+      <div className={classContainer}>
+        <div className={classInner}>
+          <input type="text"
+            style={styles}
+            onChange={this.inputChanged}
+            onKeyDown={this.keyDownHandler}
+            value={this.state.query.toUpperCase()}
+            placeholder={placeholder}/>
+        </div>
       </div>
     );
   }
