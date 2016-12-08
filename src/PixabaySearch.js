@@ -25,7 +25,8 @@ export default class PixabaySearch extends Component {
             onChange={this.inputChanged}
             onKeyDown={this.keyDownHandler}
             value={this.state.query.toUpperCase()}
-            placeholder={placeholder}/>
+            placeholder={placeholder}
+          />
         </div>
       </div>
     );

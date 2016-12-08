@@ -87,8 +87,8 @@ body {
 .searchbar > input {
   pointer-events: all;
   width: 90%;
-  border: none;
-  background-color: rgba(100, 255, 100, 0.9);
+  border: 1px dashed white;
+  background-color: rgba(0,0,0,0.5);
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 50px;
   color: white;
@@ -118,5 +118,6 @@ body {
 {
   .searchbar > input {
     font-size: 35px;
+    padding: 2px;
   }
 }
