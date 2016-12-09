@@ -123,4 +123,8 @@ body {
     font-size: 35px;
     line-height: 1.5;
   }
+  .row {
+    width: 320px;
+
+  }
 }
