@@ -14,11 +14,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  min-height: 150px;
+  width: 100vw;
+  height: 100vh;
+
 }
 .row-limits {
-  height: 25vh;
-  max-height: 150px;
+  /*height: 25vh;*/
+  /*max-height: 150px;*/
 }
 .tile {
   flex: 1;
@@ -115,7 +117,7 @@ body {
     line-height: 1.5;
   }
 }
-@media screen and (max-width: 320px) /* iPhone 5S portrait */
+@media screen and (device-max-width: 320px) /* iPhone 5S portrait */
 {
   .searchbar > input {
     font-size: 35px;
