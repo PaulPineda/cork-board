@@ -12,11 +12,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  min-height: 150px;
-}
-.row-limits {
-  /*height: 25vh;
-  max-height: 150px;*/
+  justify-content: center;
 }
 .tile {
   flex: 1;
@@ -25,8 +21,6 @@ body {
 }
 .polaroids > div {
   margin: 5px;
-  /*flex: 1;*/
-  /*min-width: 150px;*/
 }
 .polaroids div {
   -webkit-transform: rotate(-2deg);
