@@ -31,6 +31,10 @@ class Root extends Component {
       const {hits} = res.data;
       this.setState({ query,  tiles: [ ...hits ] });
     });
+    .catch(err => {
+      console.log(err);
+    })
+    .done();
   }
 
   handleTileClick(hit) {
