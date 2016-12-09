@@ -5,22 +5,20 @@ body {
   background-repeat: repeat;
 }
 #spa {
-  /*width: 100vw;
+  width: 100vw;
   height: 100vh;
-  display: flex;*/
+  display: flex;
 
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  width: 100vw;
-  height: 100vh;
-
+  min-height: 150px;
 }
 .row-limits {
-  /*height: 25vh;*/
-  /*max-height: 150px;*/
+  height: 25vh;
+  max-height: 150px;
 }
 .tile {
   flex: 1;
@@ -117,14 +115,10 @@ body {
     line-height: 1.5;
   }
 }
-@media screen and (device-max-width: 320px) /* iPhone 5S portrait */
+@media screen and (max-width: 320px) /* iPhone 5S portrait */
 {
   .searchbar > input {
     font-size: 35px;
     line-height: 1.5;
-  }
-  .row {
-    width: 320px;
-
   }
 }
