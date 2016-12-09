@@ -27,14 +27,13 @@ class Root extends Component {
     var URL = 'https://pixabay.com/api/?key='+API_KEY+'&q='+encodeURIComponent(query)
               +'&orientation=horizontal&per_page=96&image_type=photo'+pageParam;
     axios.get(URL)
-    .then(res => {
+    .then(res => {console.log('here')
       const {hits} = res.data;
       this.setState({ query,  tiles: [ ...hits ] });
-    });
-    .catch(err => {
-      console.log(err);
     })
-    .done();
+    .catch(err => {
+      console.log(err)
+    })
   }
 
   handleTileClick(hit) {
