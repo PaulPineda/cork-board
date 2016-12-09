@@ -1,18 +1,19 @@
 body {
   padding :0;
   margin: 0;
-  /*background-image: url('../dist/cork.jpg');
-  background-repeat: repeat;*/
+  background-image: url('../dist/cork.jpg');
+  background-repeat: repeat;
 }
 #spa {
-
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   min-height: 150px;
-  max-width: 320px;
 }
 .row-limits {
   height: 25vh;
@@ -115,6 +116,9 @@ body {
 }
 @media screen and (max-width: 320px) /* iPhone 5S portrait */
 {
+  .row{
+    max-width: 100%;
+  }
   .searchbar > input {
     font-size: 35px;
     line-height: 1.5;
