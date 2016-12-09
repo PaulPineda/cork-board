@@ -24,7 +24,9 @@ body {
   align-self: stretch;
 }
 .polaroids > div {
-  flex: 1
+  /*margin: 10px;*/
+  flex: 1;
+  min-width: 150px;
 }
 .polaroids div {
   -webkit-transform: rotate(-2deg);
