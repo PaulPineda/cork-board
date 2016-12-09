@@ -28,7 +28,7 @@ body {
   flex: 1;
   min-width: 150px;
 }*/
-/*.polaroids div {
+.polaroids div {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
@@ -48,7 +48,7 @@ body {
   -webkit-transition: -webkit-transform .15s linear;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}*/
+}
 
 /* On hover, darken the shadows a bit */
 /*.polaroids div > img {
