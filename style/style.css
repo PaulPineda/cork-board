@@ -51,10 +51,10 @@ body {
 }*/
 
 /* On hover, darken the shadows a bit */
-.polaroids div > img {
+/*.polaroids div > img {
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-}
+}*/
 .selected > img{
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
