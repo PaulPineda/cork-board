@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/PaulPineda/pineda.codes#readme",
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.19.0",
     "lodash": "^4.17.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
